@@ -1,0 +1,1 @@
+This is tutorial for C++. Containing notes and example code on concepts used in C++.
