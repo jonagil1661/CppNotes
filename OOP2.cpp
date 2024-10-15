@@ -2,29 +2,33 @@
 using namespace std;
 
 class ID {
-    private: // private attribute
-    int socialSecurity;
-    public: // public attribute
-    string name;
+ private:  // private attribute
+  int socialSecurity;
 
-    ID(string name, int socialSecurity) {
-        this->socialSecurity = socialSecurity;
-        this->name = name;
-    }
+ public:  // public attribute
+  string name;
 
-    int getSocialSecurity() {
-        return socialSecurity;
-    }
+  ID(string name, int socialSecurity) {
+    this->socialSecurity = socialSecurity;
+    this->name = name;
+  }
 
-    void setSocialSecurity(int socialSecurity) {
-        this->socialSecurity = socialSecurity;
-    }
+  int getSocialSecurity() { return socialSecurity; }
+
+  void setSocialSecurity(int socialSecurity) {
+    this->socialSecurity = socialSecurity;
+  }
 };
 
 int main() {
-    ID employee("Joe", 123456789); // declare & instantiate object
-    cout << employee.name << endl; // don't need getter method b/c name is public
-    cout << employee.getSocialSecurity() << endl; // requires getter method to access
+  ID employee("Joe", 123456789);  // declare & instantiate object
+  cout << employee.name << endl;  // don't need getter method b/c name is public
+  cout << employee.getSocialSecurity()
+       << endl;  // requires getter method to access
 
-    return 0;
+  employee.setSocialSecurity(
+      123123123);  // use setter method to change value of private attribute
+  cout << employee.getSocialSecurity() << endl;
+
+  return 0;
 }
