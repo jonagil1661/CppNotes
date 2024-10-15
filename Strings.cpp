@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-using namespace string;
 
 int main() {
   /*
@@ -26,20 +25,19 @@ int main() {
   */
 
   string myString = "Hello";
-  cout << myString[0] << endl; // outputs H
+  cout << myString[0] << endl;  // outputs H
   myString[0] = 'J';
   myString[myString.size() - 1] = 'y';
   cout << myString << endl;
 
-  cout << myString.at(0); // first character using at()
+  cout << myString.at(0);  // first character using at()
 
   /*
     C-style strings
   */
 
-  string greeting1 = "Hello"; // regular string
-  char greeting2[] = "Hello"; // C-Style string (an array of characters)
+  string greeting1 = "Hello";  // regular string
+  char greeting2[] = "Hello";  // C-Style string (an array of characters)
 
-  
   return 0;
 }
