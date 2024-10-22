@@ -1,4 +1,6 @@
-#pragma once 
+#ifndef CAR_HPP
+#define CAR_HPP
+
 #include <string>
 
 class Car {
@@ -12,3 +14,4 @@ class Car {
   std::string returnColor();
 };
 
+#endif CAR_HPP
