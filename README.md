@@ -13,5 +13,6 @@ Guide -- Start With:
 8. OOP2.cpp - private attribute, getter/setter method
 9. OOP3.cpp - inheritance
 10. OOP4.cpp - polymorphism
+11. Headers Directory - .cpp & .hpp classes
 
 Information gathered from https://www.w3schools.com/
