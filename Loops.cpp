@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 int main() {
   /*
@@ -7,14 +7,14 @@ int main() {
   */
   int num = 20;
   if (num >= 19) {
-    cout << "num is greater than 19" << endl;
+    std::cout << "num is greater than 19" << std::endl;
   } else if (num < 19 && num > 0) {
-    cout << "num is less than 19 and positive" << endl;
+    std::cout << "num is less than 19 and positive" << std::endl;
   } else {
-    cout << "num is negative" << endl;
+    std::cout << "num is negative" << std::endl;
   }
   // shorthand -- variable = (condition) ? expressionTrue : expressionFalse;
-  string result = (num > 10) ? "num is greater than 10" : "num is less than 10";
+  std::string result = (num > 10) ? "num is greater than 10" : "num is less than 10";
 
   /*
     switch statements
@@ -22,16 +22,16 @@ int main() {
   int day = 2;
   switch (day) {
     case 1:
-      cout << "Today is monday!" << endl;
+      std::cout << "Today is monday!" << std::endl;
       break;
     case 2:
-      cout << "Today is tuesday!" << endl;
+      std::cout << "Today is tuesday!" << std::endl;
       break;
     case 3:
-      cout << "Today is wednesday!" << endl;
+      std::cout << "Today is wednesday!" << std::endl;
       break;
     default:
-      cout << "Today is either thursday, friday, saturday, or sunday!" << endl;
+      std::cout << "Today is either thursday, friday, saturday, or sunday!" << std::endl;
   }
 
   /*
@@ -39,7 +39,7 @@ int main() {
   */
   int cnt = 0;
   while (cnt < 10) {  // prints cnt value until condition has been reached
-    cout << cnt << endl;
+    std::cout << cnt << std::endl;
     cnt++;
   }
 
@@ -48,7 +48,7 @@ int main() {
   */
   for (int i = 0; i < 5;
        i++) {  // prints i value until condition has been reached
-    cout << i << endl;
+    std::cout << i << std::endl;
   }
 
   /*
@@ -57,7 +57,7 @@ int main() {
   int list[5] = {1, 2, 3, 4, 5};
   for (int i : list) {
     if (i == 3) continue;  // breaks ONE iteration in loop
-    cout << i << endl;
+    std::cout << i << std::endl;
   }
 
   return 0;

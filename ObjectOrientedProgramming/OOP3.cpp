@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 /*
 Use inheritance to derive a class from another:
@@ -11,7 +10,7 @@ class Restaraunt {  // parent class
   bool passInspection = false;
 
  public:
-  void print1() { cout << "Parent Class" << endl; }
+  void print1() { std::cout << "Parent Class" << std::endl; }
 };
 
 class FastFood : public Restaraunt {  // child class
@@ -20,12 +19,12 @@ class FastFood : public Restaraunt {  // child class
 
  public:
   void print2() {
-    cout << "The rating is: " << fiveStarRating << " stars" << endl;
+    std::cout << "The rating is: " << fiveStarRating << " stars" << std::endl;
   }
   void passInspectionMethod(bool passed) {
     passInspection = passed;
-    cout << "Restaurant passed the inspection (1=True, 0=False): "
-         << passInspection << endl;
+    std::cout << "Restaurant passed the inspection (1=True, 0=False): "
+         << passInspection << std::endl;
   }  // sets passInspection in parent class
 };
 

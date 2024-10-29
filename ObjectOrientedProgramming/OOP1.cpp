@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 /*
 Access specifiers:
@@ -21,13 +20,13 @@ class PublicClass {  // class declaration
 
   PublicClass(int number);  // constructor with different parameters
 
-  void method1() { cout << 3 + 5 - 2 << endl; }
+  void method1() { std::cout << 3 + 5 - 2 << std::endl; }
 
-  void method2(string txt);  // declare method inside class without definition
+  void method2(std::string txt);  // declare method inside class without definition
 };
 
-void PublicClass::method2(string txt) {  // define method outside class
-  cout << txt << endl;
+void PublicClass::method2(std::string txt) {  // define method outside class
+  std::cout << txt << std::endl;
 }
 PublicClass::PublicClass(int number) {  // constructor defined outside class
   this->number = number;

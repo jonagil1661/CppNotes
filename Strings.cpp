@@ -1,42 +1,42 @@
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 int main() {
   /*
     String Concatenation
   */
 
-  string firstName = "Johnny", lastName = "Gill";
-  string fullName = firstName + " " + lastName;
-  cout << fullName << endl;
+  std::string firstName = "Johnny", lastName = "Gill";
+  std::string fullName = firstName + " " + lastName;
+  std::cout << fullName << std::endl;
 
-  string fullName2 = firstName.append(lastName);
+  std::string fullName2 = firstName.append(lastName);
 
   /*
     String length
   */
 
-  string txtLong = "qwertyuiopasdfghjklzxcvbnm";
-  cout << "The string's length is: " << txtLong.length() << endl;
-  cout << "The string's length is: " << txtLong.size() << endl;
+  std::string txtLong = "qwertyuiopasdfghjklzxcvbnm";
+  std::cout << "The string's length is: " << txtLong.length() << std::endl;
+  std::cout << "The string's length is: " << txtLong.size() << std::endl;
 
   /*
     Access Strings
   */
 
-  string myString = "Hello";
-  cout << myString[0] << endl;  // outputs H
+  std::string myString = "Hello";
+  std::cout << myString[0] << std::endl;  // outputs H
   myString[0] = 'J';
   myString[myString.size() - 1] = 'y';
-  cout << myString << endl;
+  std::cout << myString << std::endl;
 
-  cout << myString.at(0);  // first character using at()
+  std::cout << myString.at(0);  // first character using at()
 
   /*
     C-style strings
   */
 
-  string greeting1 = "Hello";  // regular string
+  std::string greeting1 = "Hello";  // regular string
   char greeting2[] = "Hello";  // C-Style string (an array of characters)
 
   return 0;

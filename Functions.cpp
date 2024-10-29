@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
 /*
 Functions need to be defined before being called
@@ -8,11 +8,11 @@ Functions need to be defined before being called
 
 void function1() {  // function declaration (use keyword 'void' to return
                     // nothing)
-  cout << "Hello World!" << endl;  // definition
+  std::cout << "Hello World!" << std::endl;  // definition
 }
 
-void function2(string name) {  // functions can have parameters
-  cout << "My name is " << name << endl;
+void function2(std::string name) {  // functions can have parameters
+  std::cout << "My name is " << name << std::endl;
 }
 
 /*
@@ -20,17 +20,17 @@ Method overloading: Methods can have same name as long as they have different
 parameters.
 */
 
-void function3(string name = "John") {  // set default parameter value
-  cout << "My name is " << name << endl;
+void function3(std::string name = "John") {  // set default parameter value
+  std::cout << "My name is " << name << std::endl;
 }
 
-void function3(string name, int age) { // add multiple parameters
-  cout << "My name is " << name << " ,and I am " << age << " years old." << endl;
+void function3(std::string name, int age) { // add multiple parameters
+  std::cout << "My name is " << name << " ,and I am " << age << " years old." << std::endl;
 }
 
 void function3(int list[3]) {
     for (int i = 0; i < 3; i++) {
-        cout << i << endl;
+        std::cout << i << std::endl;
     }
 }
 
@@ -71,9 +71,9 @@ int main() {
 
   int x = 1, y = 2;
   swapNumbers(x, y); // swaps the references' values
-  cout << x << y << endl; // outputs 2 1
+  std::cout << x << y << std::endl; // outputs 2 1
 
-  cout << divisibleBy5(17) << endl;
+  std::cout << divisibleBy5(17) << std::endl;
 
   return 0;
 }

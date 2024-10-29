@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
 int main() {
   /*
@@ -11,12 +11,12 @@ int main() {
   enum Spiciness { low, mild, spicy };
   enum Spiciness myVariable;   // create variable to access enum
   myVariable = mild;           // assign a value to enum variable
-  cout << myVariable << endl;  // default: first item has value 0, second item
+  std::cout << myVariable << std::endl;  // default: first item has value 0, second item
                                // has value 1, etc.
 
   enum Spiciness1 { low1 = 1, mild1 = 5, spicy1 = 10 };
   enum Spiciness1 myVariable2 = spicy1;
-  cout << myVariable2 << endl;  // outputs 10
+  std::cout << myVariable2 << std::endl;  // outputs 10
 
   enum Spiciness2 {  // next items update numbers correspondingly
     low2 = 4,
@@ -37,34 +37,34 @@ int main() {
     default:
       printf("SUPER SPICY");
   }
-  cout << endl;
+  std::cout << std::endl;
 
   /*
   References
   */
 
   // reference variable is a reference to an existing variable
-  string color = "red";
-  string& otherNameForColor = color;  // reference to color
+  std::string color = "red";
+  std::string& otherNameForColor = color;  // reference to color
 
-  cout << color << " " << otherNameForColor << endl;  // outputs "red"
-  cout << &color << endl;  // outputs memory address of variable
+  std::cout << color << " " << otherNameForColor << std::endl;  // outputs "red"
+  std::cout << &color << std::endl;  // outputs memory address of variable
 
   /*
   Pointers
   */
 
   // pointers store the memory address as its value
-  string food = "Hamburger";
-  string* foodPointer = &food;  // pointer variable storing address of food
-  cout << foodPointer << endl;  // outputs memory address of food
+  std::string food = "Hamburger";
+  std::string* foodPointer = &food;  // pointer variable storing address of food
+  std::cout << foodPointer << std::endl;  // outputs memory address of food
 
-  cout << *foodPointer
-       << endl;  // outputs dereferenced value of pointer variable
+  std::cout << *foodPointer
+       << std::endl;  // outputs dereferenced value of pointer variable
 
   *foodPointer = "Sandwich";     // change the value of the pointer
-  cout << *foodPointer << endl;  // outputs new pointer value
-  cout << food << endl;          // outputs new value of variable
+  std::cout << *foodPointer << std::endl;  // outputs new pointer value
+  std::cout << food << std::endl;          // outputs new value of variable
 
   return 0;
 }
