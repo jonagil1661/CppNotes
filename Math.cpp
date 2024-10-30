@@ -1,6 +1,5 @@
 #include <cmath>  // include the cmath library
 #include <iostream>
-//using namespace std;
 
 int main() {
   /*

@@ -1,7 +1,5 @@
 #include <iostream>
 
-//using namespace std;
-
 /*
 Functions need to be defined before being called
 */

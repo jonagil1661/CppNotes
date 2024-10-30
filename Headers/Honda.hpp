@@ -1,4 +1,3 @@
-#include <string>
 #include "Car.hpp"
 
 class Honda : public Car {
